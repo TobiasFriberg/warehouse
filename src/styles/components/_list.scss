@@ -1,0 +1,25 @@
+.list {
+	> .item {
+		padding: 15px;
+
+		&.small {
+			padding: 2px;
+		}
+
+		&:not(:last-child) {
+			border-bottom: 1px solid #E0E0E0;
+		}
+
+		> div {
+			padding: 0 10px;
+
+			&.small {
+				padding: 0 5px;
+			}
+		}
+
+		> .growing {
+			flex-grow: 1;
+		}
+	}
+}

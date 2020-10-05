@@ -1,0 +1,35 @@
+.view {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
+	> .content {
+		padding: 10px 10px 0 10px;
+		flex-grow: 1;
+		overflow: auto;
+		align-self: center;
+		width: 100%;
+
+		.row:not(:first-child) {
+			padding-top: 40px;
+		}
+	}
+
+	> .footer {
+		padding: 40px;
+		background-color: $primary-color;
+		color: $light-text-color;
+	}
+}
+
+.fullscreen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9001;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,20 @@
+.expander {
+	margin-top: 25px;
+
+	> .content {
+		margin-top: 10px;
+		display: none;
+	}
+
+	.headline {
+		.fa {
+			color: #E0E0E0;
+		}
+	}
+
+	&.expanded {
+		> .content {
+			display: block;
+		}
+	}
+}
